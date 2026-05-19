@@ -1,0 +1,29 @@
+.footer {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 86px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+.footer-content a,
+.footer-content p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(26, 26, 26, 1);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-content a:hover {
+    color: rgba(26, 26, 26, 0.5);
+}
