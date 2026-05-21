@@ -41,7 +41,7 @@
 @media (max-width: 768px) {
     .register-title h1,
     .login-title h1 {
-        font-size: 100px;
+        font-size: 80px;
     }
 }
 
@@ -53,6 +53,13 @@
     flex-direction: column;
     gap: 38px;
     margin-top: 92px;
+}
+
+@media (max-width: 768px) {
+    .register-form,
+    .login-form {
+        margin-top: 60px;
+    }
 }
 
 .register-form input,
