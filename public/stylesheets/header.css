@@ -1,3 +1,6 @@
+header{
+    margin: 0 auto;
+}
 .nav-wrapper{
     display:flex;
     justify-content: flex-end;
@@ -15,4 +18,37 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: rgba(26, 26, 26, 1);
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: flex;
+    }
+    .nav-wrapper {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #111827;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .nav-wrapper.active {
+        display: flex;
+        background: #111827;
+    }
 }
