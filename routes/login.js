@@ -24,14 +24,11 @@ router.post('/', async (req, res) => {
 
         req.session.user = {email};
 
-        return res.redirect('blog');
+        return res.redirect('/blogs');
     } catch (err) {
         console.log(err);
         res.render('login', {message: 'ავტორიზაციის დროს დაფიქსირდა შეცდომა, გთხოვთ სცადოთ თავიდან.'});
     }
-
-
-    res.render('login', {message: ""});
 
 })
 module.exports = router;

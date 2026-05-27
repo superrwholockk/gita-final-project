@@ -1,5 +1,4 @@
-.register-container,
-.login-container{
+.new-post-container {
     max-width: 1440px;
     margin: 50px auto;
     display: flex;
@@ -7,46 +6,41 @@
     justify-content: center;
 }
 
-.register-title,
-.login-title {
+.new-post-title {
     color: rgba(26, 26, 26, 1);
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: rgba(0, 0, 0, 0.34);
+    text-transform: uppercase;
 }
 
-.register-title h1,
-.login-title h1 {
+.new-post-title h1 {
     font-family: Inter;
     font-weight: 700;
-    font-size: 223px;
+    font-size: 224px;
     text-align: center;
     width: 100%;
 }
 
 @media (max-width: 1440px) {
-    .register-title h1,
-    .login-title h1 {
+    .new-post-title h1 {
         font-size: 180px;
     }
 }
 
 @media (max-width: 1024px) {
-    .register-title h1,
-    .login-title h1 {
+    .new-post-title h1 {
         font-size: 130px;
     }
 }
 
 @media (max-width: 768px) {
-    .register-title h1,
-    .login-title h1 {
+    .new-post-title h1 {
         font-size: 80px;
     }
 }
 
-.register-form,
-.login-form {
+.new-post-form {
     width: 67%;
     margin: 0 auto;
     display: flex;
@@ -56,14 +50,13 @@
 }
 
 @media (max-width: 768px) {
-    .register-form,
-    .login-form {
+    .new-post-form {
         margin-top: 60px;
     }
 }
 
-.register-form input,
-.login-form input {
+.new-post-form input,
+.new-post-form textarea {
     padding: 24px;
     border-radius: 2px;
     border: 1px solid rgba(109, 110, 118, 0.5);
@@ -75,8 +68,8 @@
     color: rgba(35, 37, 54, 1);
 }
 
-.register-form input::placeholder,
-.login-form input::placeholder {
+.new-post-form input::placeholder,
+.new-post-form textarea::placeholder {
     font-family: Inter;
     font-weight: 400;
     font-size: 16px;
@@ -84,24 +77,7 @@
     color: rgba(35, 37, 54, 1);
 }
 
-.show-password-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    color: #555555;
-    cursor: pointer;
-}
-
-.show-password-container input {
-    cursor: pointer;
-    width: auto;
-}
-
-.register-form button,
-.login-form button {
+.new-post-form button {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(26, 26, 26, 1);
     font-family: Sen;
@@ -117,30 +93,8 @@
     border-radius: 2px;
 }
 
-.register-form button:hover,
-.login-form button:hover {
+.new-post-form:hover {
     background-color: transparent;
     color: rgba(26, 26, 26, 1);
     border: 1px solid rgba(26, 26, 26, 1);
-}
-
-.register-container p,
-.login-container p {
-    font-family: Inter;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    color: rgba(26, 26, 26, 1);
-    text-decoration: none;
-    margin-top: 26px;
-    text-align: center;
-}
-.register-container a,
-.login-container a {
-    transition: 0.2s;
-}
-
-.register-container a:hover,
-.login-container a:hover {
-    opacity: 0.8;
 }

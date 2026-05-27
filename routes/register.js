@@ -18,6 +18,11 @@ router.post('/', async(req, res) => {
     if (password.length < 8) {
         return res.render('register', {message: "პაროლი უნდა შეიცავდეს მინიმუმ 8 სიმბოლოს"})
     }
+
+    if (password !== confirmPassword) {
+        return res.render('register', {message: 'პაროლები არ ემთხვევა ერთმანეთს'});
+    }
+
     try {
         const existingUser = await User.findOne({email});
 

@@ -14,7 +14,7 @@
           rel="stylesheet">
 </head>
 <body>
-<%- include('partials/header') %>
+<%- include('partials/header',{email:null}) %>
 
 <p style="color:red; font-size:16px; margin-top: 15px; text-align: center;">
     <%=message%>
@@ -28,11 +28,16 @@
     <form action="/login" method="POST" class="login-form">
         <input id="email" type="email" name="email" placeholder="Email Address" required>
         <input id="password" type="password" name="password" placeholder="Password" required>
+        <div class="show-password-container">
+            <input type="checkbox" onclick="myFunction()">
+            <label for="show-pass-check">Show Password</label>
+        </div>
         <button type="submit">Sign In</button>
     </form>
     <p>Don’t have an account? <a href="/register">Sign up here</a></p>
 </section>
 
 <%- include('partials/footer')%>
+<script src="./javascripts/login.js"></script>
 </body>
 </html>

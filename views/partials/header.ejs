@@ -1,4 +1,9 @@
 <header class='container'>
+    <div class="username">
+        <p>
+            <%= email %>
+        </p>
+    </div>
     <nav class='nav-wrapper' id="nav">
         <ul class='nav-list-wrapper'>
             <li>
@@ -13,10 +18,20 @@
             <li>
                 <a href="/newsletter">Newsletter</a>
             </li>
+            <% if(email){ %>
+                <li>
+                    <a href="/blogs/new-post">New Post</a>
+                </li>
+                <li>
+                    <a href="/logout">Log Out</a>
+                </li>
+            <% } %>
         </ul>
     </nav>
     <button class="menu-btn" id="menuBtn">
-        ☰
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
     </button>
 
     <script src="/javascripts/header.js"></script>
